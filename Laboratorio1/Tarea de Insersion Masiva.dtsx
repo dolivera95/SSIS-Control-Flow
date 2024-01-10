@@ -1,0 +1,198 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/6/2024 3:48:02 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="24LAP5CD3014VKR"
+  DTS:CreatorName="24LAP5CD3014VKR\Daniel Olivera"
+  DTS:DTSID="{A064790B-542E-469C-A70C-B3FCE15C963F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="10250"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{DC0AC34D-9489-4CD8-BCCA-3917B3C90136}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[24LAP5CD3014VKR.NORTHWND.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0B2AED23-6BF1-4351-AC57-D5B37F818DFF}"
+      DTS:ObjectName="24LAP5CD3014VKR.NORTHWND.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=24LAP5CD3014VKR;User ID=sa;Initial Catalog=NORTHWND;Provider=MSOLEDBSQL.1;Persist Security Info=True;Application Name=SSIS-Package1-{0B2AED23-6BF1-4351-AC57-D5B37F818DFF}24LAP5CD3014VKR.NORTHWND.sa;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/wzVrKFViUuYp+gST3+PYQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACoBTenMY2eSXBCq3pwfUdEh04/mTW1/mQQtT0vOwzTNwAAAAAOgAAAAAIAACAAAABCR/JLrM31YJaO37Bwu0OhPVM2GoYLXGHKxerDogGYcRAAAAAT5h8E5G+kbVEpiZVZDxekQAAAALtne3kgsd6Iy0pzCLy+fMhQs2zA50hF6I+qbyjo+80uPRlnwAAifxaZHjellyfR5/MEBc46W8F+dowXZTvIQZM</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[24LAP5CD3014VKR.NORTHWND.sa 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5CA9353F-CEC5-49A3-A8CF-6C1D7BE579A6}"
+      DTS:ObjectName="24LAP5CD3014VKR.NORTHWND.sa 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=24LAP5CD3014VKR;User ID=sa;Initial Catalog=NORTHWND;Provider=MSOLEDBSQL.1;Persist Security Info=True;Application Name=SSIS-Package1-{5CA9353F-CEC5-49A3-A8CF-6C1D7BE579A6}24LAP5CD3014VKR.NORTHWND.sa 1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/wzVrKFViUuYp+gST3+PYQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAj9PLlk4Y89F4v7ODybs7rEuvicMNjfHXjSfmhEluccAAAAAAOgAAAAAIAACAAAAA/RjEHCEZ523f2SWaefeiVZQDUXJqEaWFbZzLYaNkuuBAAAACrqqXI3fqQXQE7Mmm3aiOxQAAAAL1bozgpd3g6ByVyNvTiLauPJ/PAGmELkuJjYVXTV+/NE+ayakGngSpnp/a2Z+b8XZRPbJ/xYxrO/Y8b39+It+s</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[24LAP5CD3014VKR.STREAMING.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{76B99A37-9378-45BF-893B-5CADD60A2ACC}"
+      DTS:ObjectName="24LAP5CD3014VKR.STREAMING.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=24LAP5CD3014VKR;User ID=sa;Initial Catalog=STREAMING;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package1-{76B99A37-9378-45BF-893B-5CADD60A2ACC}24LAP5CD3014VKR.STREAMING.sa;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/wzVrKFViUuYp+gST3+PYQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADm+SkHZCOnEOiYdSTCVbVF4orxnwmk1S7TTcLp7Hvd8wAAAAAOgAAAAAIAACAAAAAXXk/s73ktWY2W3Zk3AnVgZGYv59698TuU7ob+qVUmMxAAAABjrculgXeF3IQEGvQl9p5FQAAAAH54j95gs6M9vNM/yyvz2kTk16mOLMdFUQEWDxwoBzhG2LD91l2wMeomtaNbzlS5LeNwBAO5K1Lx+9BimL1oRjc</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Clientes.csv]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{68855A74-B55C-438F-8B20-166E673181A0}"
+      DTS:ObjectName="Clientes.csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Udemy\SQLServerIntegrationServices\ControlFlow\Bulk Insert\Clientes.csv" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Bulk Insert Cliente"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:Disabled="True"
+      DTS:DTSID="{32C9C1A1-022C-4535-A209-FBAE0F94A10C}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Bulk Insert Cliente"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{76B99A37-9378-45BF-893B-5CADD60A2ACC}"
+          SQLTask:SqlStatementSource="BULK INSERT Cliente&#xA;FROM 'C:\Udemy\SQLServerIntegrationServices\ControlFlow\Bulk Insert\Clientes.csv'&#xA;WITH (&#xA;&#x9;FIRSTROW = 2,&#xA;&#x9;FIELDTERMINATOR = ',',&#xA;&#x9;ROWTERMINATOR = '\n'&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Cargar Datos Cliente"
+      DTS:CreationName="Microsoft.BulkInsertTask"
+      DTS:Description="Tarea Inserción masiva"
+      DTS:DTSID="{47949E6A-C228-4972-A82C-0186A0D4887B}"
+      DTS:ExecutableType="Microsoft.BulkInsertTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Cargar Datos Cliente"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <BulkInsertTask:BulkInsertTaskData
+          BulkInsertTask:SourceConnectionName="{68855A74-B55C-438F-8B20-166E673181A0}"
+          BulkInsertTask:DestinationConnectionName="{76B99A37-9378-45BF-893B-5CADD60A2ACC}"
+          BulkInsertTask:DestinationTableName="[dbo].[Cliente]"
+          BulkInsertTask:FirstRow="2"
+          BulkInsertTask:FieldTerminator="Comma {,}" xmlns:BulkInsertTask="www.microsoft.com/sqlserver/dts/tasks/bulkinserttask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Eliminar Registros Clientes"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{13602059-AD40-4F2E-A516-FCFC1D3A4A47}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Eliminar Registros Clientes"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{76B99A37-9378-45BF-893B-5CADD60A2ACC}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE Cliente" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{4A0BD1F8-46D8-4690-9B51-4B93A8BEBB5D}"
+      DTS:From="Package\Eliminar Registros Clientes"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Cargar Datos Cliente" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="203.2,41.6"
+          Id="Package\Eliminar Registros Clientes"
+          TopLeft="404.999977871777,86.6666660639975" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Bulk Insert Cliente"
+          TopLeft="174.16665715062,180.266665413115" />
+        <NodeLayout
+          Size="175.2,41.6"
+          Id="Package\Cargar Datos Cliente"
+          TopLeft="412.499977461994,174.199998788635" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="503.349977666885,128.266666063997">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45.9333327246375"
+              Start="0,0"
+              End="0,38.4333327246375">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.4333327246375" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
